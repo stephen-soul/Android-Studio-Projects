@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidMagicCounter</string>
+    <string name="WelcomeMessage">Welcome</string>
+    <string name="splashscreenwallpaper">SplashScreenWallpaper</string>
+    <string name="amountOfPlayers">How many players?</string>
+    <string name="players1">1</string>
+</resources>
