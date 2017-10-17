@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InquisitiveInquiry</string>
+    <string name="StartQuizButton">Start Quiz</string>
+    <string name="Welcome">Welcome</string>
+    <string name="NamePlaceholder">Your Name</string>
+    <string name="usersQuiz">%1$s\'s Quiz</string>
+</resources>

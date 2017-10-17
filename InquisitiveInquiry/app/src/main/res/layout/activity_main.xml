@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColour"
+    tools:context="com.example.stephen.inquisitiveinquiry.MainActivity">
+
+    <Button
+        android:id="@+id/startQuizButton"
+        android:layout_width="188dp"
+        android:layout_height="59dp"
+        android:text="@string/StartQuizButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="@string/Welcome"
+        android:textColor="@color/VisiboneRecommended"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427"
+        tools:includeFontPadding="false" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="166dp"
+        android:layout_height="75dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:hint="@string/NamePlaceholder"
+        android:inputType="textCapSentences"
+        android:maxLength="9"
+        android:paddingEnd="10dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textColor="@color/VisiboneRecommended"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+</android.support.constraint.ConstraintLayout>
