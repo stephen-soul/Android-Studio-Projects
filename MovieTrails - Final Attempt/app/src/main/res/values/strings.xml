@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movie Trails</string>
+    <string name="splashLogo">Logo for Movie Trails Dec 2017 Stephen Fetinko</string>
+    <string name="mainScreenOption1">Tap here to view movies</string>
+    <string name="mainScreenOption1Description">Button leading to viewing movies</string>
+    <string name="mainScreenOption2">Tap here to add a movie</string>
+    <string name="mainScreenOption2Description">Button leading to editing movies</string>
+    <string name="title_movie_list">Movies</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="adding_movies">Add Movies</string>
+    <string name="adding_title">Movie Title: </string>
+    <string name="adding_description">Movie Description: </string>
+    <string name="adding_thumbnail">Movie Thumbnail: </string>
+    <string name="adding_rating">Movie Rating (1 &#8211; 5 stars): </string>
+    <string name="adding_url">Movie Url</string>
+    <string name="submit_movie">Submit Movie</string>
+    <string name="editing_movies">Edit Movie</string>
+    <string name="confirm_edit">Save Changes</string>
+</resources>
