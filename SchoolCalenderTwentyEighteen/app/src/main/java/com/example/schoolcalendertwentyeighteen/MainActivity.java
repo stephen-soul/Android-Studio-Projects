@@ -33,14 +33,16 @@ public class MainActivity extends AppCompatActivity {
 
     // Get the XML elements
     TextView weekday;
+    TextView secondary_message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // On create initialize the weekday TextView
+        // On create initialize the TextViews
         weekday = findViewById(R.id.weekday);
+        secondary_message = findViewById(R.id.secondary_message);
 
         // Find out what day it is
         SimpleDateFormat sdf = new SimpleDateFormat("EEEE", Locale.CANADA);
@@ -49,5 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the day of the week to the TextView
         weekday.setText(dayOfTheWeek);
+
+        // Set the secondary message to include the day of the week
+        secondary_message.setText(getString(R.string.secondary_message, dayOfTheWeek));
     }
 }

@@ -2,4 +2,14 @@
     <string name="app_name">SchoolCalenderTwentyEighteen</string>
     <string name="logo_description">Logo for 2018 Calendar App</string>
     <string name="main_message">Today is&#8230;</string>
+    <string name="secondary_message">%1$s\'s Classes</string>
+    <string-array name="hamburger_items">
+        <item>Home</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Notes</item>
+    </string-array>
 </resources>
