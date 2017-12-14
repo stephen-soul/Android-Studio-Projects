@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SchoolCalenderTwentyEighteen</string>
-    <string name="main_message"
+    <string name="logo_description">Logo for 2018 Calendar App</string>
+    <string name="main_message">Today is&#8230;</string>
 </resources>

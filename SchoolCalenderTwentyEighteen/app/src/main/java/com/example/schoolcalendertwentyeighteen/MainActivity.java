@@ -5,6 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.text.DateFormatSymbols;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 
 /**
@@ -24,9 +31,23 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Get the XML elements
+    TextView weekday;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // On create initialize the weekday TextView
+        weekday = findViewById(R.id.weekday);
+
+        // Find out what day it is
+        SimpleDateFormat sdf = new SimpleDateFormat("EEEE", Locale.CANADA);
+        Date d = new Date();
+        String dayOfTheWeek = sdf.format(d);
+
+        // Set the day of the week to the TextView
+        weekday.setText(dayOfTheWeek);
     }
 }
