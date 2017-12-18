@@ -1,4 +1,4 @@
-# Android Studio Movie Trailer App.
+# Android Studio Movie Trailer App
 
 (In short) This was originally a school project to demonstrate the use of Strings.xml, the use of an SQLite database, and the use of persistance. But I ended up liking it more than not and want to share it... So, enjoy!
 
