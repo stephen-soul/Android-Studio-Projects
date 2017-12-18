@@ -25,6 +25,7 @@ public class AddingEntries extends AppCompatActivity {
     String submittedDescription;
     Float submittedRating;
     String submittedUrl;
+    String filteredDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,9 +68,10 @@ public class AddingEntries extends AppCompatActivity {
                 else {
                     submittedTitle = title.getText().toString();
                     submittedDescription = description.getText().toString();
+                    filteredDescription = submittedDescription.replace("'","''");
                     submittedRating = rating.getRating();
                     submittedUrl = url.getText().toString();
-                    addToDB(submittedTitle, submittedDescription, submittedRating, "", submittedUrl);
+                    addToDB(submittedTitle, filteredDescription, submittedRating, "", submittedUrl);
                     Intent intent = new Intent(AddingEntries.this, MainActivity.class);
                     startActivity(intent);
                     finish();

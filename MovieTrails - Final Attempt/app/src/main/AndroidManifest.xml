@@ -13,18 +13,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ListDataActivity" />
-        <activity android:name=".AddingEntries" />
-        <activity android:name=".ViewContent" />
-        <activity android:name=".EditEntry"></activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ListDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AddingEntries" android:screenOrientation="portrait"/>
+        <activity android:name=".ViewContent" android:screenOrientation="portrait"/>
+        <activity android:name=".EditEntry" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

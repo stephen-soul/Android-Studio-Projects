@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ListDataActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
         option2.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddingEntries.class);
                 startActivity(intent);
-                finish();
             }
         });
     } // End of on create

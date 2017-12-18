@@ -23,6 +23,7 @@ public class EditEntry extends AppCompatActivity {
 
     String newTitle;
     String newDescription;
+    String filteredDescription;
     float newRating;
     String newUrl;
 
@@ -82,9 +83,10 @@ public class EditEntry extends AppCompatActivity {
                 else {
                     newTitle = title.getText().toString();
                     newDescription = description.getText().toString();
+                    filteredDescription = newDescription.replace("'","ll");
                     newRating = ratingBar.getRating();
                     newUrl = url.getText().toString();
-                    mDatabaseHelper.updateInformation(selectedID, newTitle, newDescription, newRating, newUrl);
+                    mDatabaseHelper.updateInformation(selectedID, newTitle, filteredDescription, newRating, newUrl);
                     toastMessage("Successfully edited the movie trailer");
                     Intent passEdits = new Intent(EditEntry.this, ViewContent.class);
                     passEdits.putExtra("id", selectedID);
